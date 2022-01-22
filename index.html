@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Simple Interest Calculator</title>
+      <script src="script.js"></script>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="maindiv">
+        <h1>Simple Interest Calculator</h1>
+        <!--Takes the Amount of the principl then fucus on the box, clears it, then validates that the number is positive-->
+        Amount <input type="number" id="principal" onfocus="this.value=null" onsubmit="Validate()"><br><br>
+        <!--Takes the range of interest rate between 1 and 20 with steps of 0.25-->
+		Rate <input type="range" id="rate" onchange="updateRate ()" min="1" max="20" step="0.25" value=10.25>
+        <!--Gives the interest rate value id-->
+		<span id="rate_val">10.25</span>%<br><br>
+        <!--Takes number of years between 1 and 10-->
+		No. of Years <select id="years">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select><br><br>
+	<!--Calculates the Interest you will get in the target year -->
+        <button type="button" onclick="compute()">
+          Compute Interest
+        </button>
+	<br><br>
+        <!--Shows the Interest you will get in the target year-->
+        <span id="result"></span><br><br>
+	<footer>
+          &#169; Everyone Can Get Rich<br>
+          &#160; &#160; Author: Boaz Ron Zohar<br>
+        </footer>
+      </div>
+    </body>
+  </html>

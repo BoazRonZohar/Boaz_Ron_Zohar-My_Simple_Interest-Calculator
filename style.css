@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+h1 {
+  color: grey;
+  font-family: verdana, Helvetica, sans-serif;
+  ;
+}
+
+.maindiv {
+  margin: auto;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  width: 490px;
+  padding: 20px;
+  border: 25px;
+  border-radius: 25px;
+  text-align: left;
+}
+
+
+
